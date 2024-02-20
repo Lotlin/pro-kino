@@ -1,0 +1,28 @@
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+  src: url('../fonts/#{$name}-#{$weight}.woff2') format('woff2'),
+    url('../fonts/#{$name}-#{$weight}.woff') format('woff');
+}
+
+@mixin bg-full($url) {
+  background: {
+    image: url($url);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+}
+
+@mixin block-width($max-width) {
+  max-width: $max-width;
+  width: 100%;
+}
+
+@mixin center-block($max-width) {
+  margin: 0 auto;
+  @include block-width($max-width);
+}
