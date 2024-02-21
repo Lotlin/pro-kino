@@ -1,0 +1,70 @@
+.header {
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include medium-layout {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @include small-layout {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__logo {
+    @include block-width(165px);
+
+    @include medium-layout {
+      @include block-width(130px);
+    }
+
+    @include small-layout {
+      @include block-width(80px);
+    }
+  }
+
+  &__link {
+    padding: 14px 20px;
+    background-color: $main-red;
+    border: 1px solid transparent;
+    border-radius: 52px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $hover-red;
+    }
+
+    &:focus {
+      background-color: $hover-red;
+      border-color: $text;
+    }
+
+    @include medium-layout {
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+
+    @include small-layout {
+      position: absolute;
+      top: 293px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 15px;
+    }
+  }
+}

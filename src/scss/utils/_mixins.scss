@@ -26,3 +26,21 @@
   margin: 0 auto;
   @include block-width($max-width);
 }
+
+@mixin large-layout {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin medium-layout {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin small-layout {
+  @media (max-width: 450px) {
+    @content;
+  }
+}

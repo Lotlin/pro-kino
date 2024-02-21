@@ -1,0 +1,51 @@
+.trailers {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  &__btn-list {
+    margin-bottom: 16px;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: $unactive;
+    color: $text;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-red;
+    }
+
+    &:active {
+      background-color: $main-red;
+    }
+
+    &--active {
+      background-color: $main-red;
+    }
+  }
+
+  &__video-wrapper {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
