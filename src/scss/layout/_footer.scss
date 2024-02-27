@@ -5,12 +5,34 @@
   font-size: 16px;
   line-height: $footer-line-height;
 
+  @include medium-layout {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 12px;
+  }
+
+  @include small-layout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   &__container {
     display: grid;
     grid-template-areas: 
     "developers logo"
     "copyright logo";
     row-gap: 36px;
+
+    @include medium-layout {
+      row-gap: 20px;
+    }
+
+    @include small-layout {
+      grid-template-areas: 
+      "logo"
+      "developers"
+      "copyright";
+    }    
   }
 
   &__developers {
@@ -39,5 +61,13 @@
     grid-area: logo;
     justify-self: end;
     align-self: end;
+
+    @include medium-layout {
+      width: 217px;
+    }
+
+    @include small-layout {
+      justify-self: start;
+    }
   }
 }
