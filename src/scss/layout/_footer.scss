@@ -2,13 +2,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $footer-background;
-  font-size: 16px;
   line-height: $footer-line-height;
 
   @include medium-layout {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-size: 12px;
   }
 
   @include small-layout {
@@ -37,10 +35,15 @@
 
   &__developers {
     grid-area: developers;
+    font-size: 16px;
+
+    @include medium-layout {
+      font-size: 12px;
+    }
   }
 
   &__developer {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 
     &:last-child {
       margin-bottom: 0;
@@ -54,6 +57,11 @@
 
   &__copyright {
     grid-area: copyright;
+    font-size: 16px;
+
+    @include medium-layout {
+      font-size: 12px;
+    }
   }
 
   &__logo {
@@ -68,6 +76,7 @@
 
     @include small-layout {
       justify-self: start;
+      margin-bottom: 4px;
     }
   }
 }
