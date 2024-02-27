@@ -2,11 +2,43 @@
   padding-top: 60px;
   padding-bottom: 120px;
 
+  @include large-layout {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  @include medium-layout {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @include small-layout {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__container {
+    @include small-layout {
+      padding: 0;
+    }
+  }
+
   &__btn-list {
     margin-bottom: 16px;
     display: flex;
     column-gap: 12px;
     align-items: center;
+
+    @include medium-layout {
+      column-gap: 8px;
+    }
+
+    @include small-layout {
+      margin-bottom: 12px;
+      padding: 0 16px;
+      overflow-x: scroll;
+      scrollbar-width: thin;
+    }
   }
 
   &__btn {
@@ -30,6 +62,21 @@
 
     &--active {
       background-color: $main-red;
+    }
+
+    @include medium-layout {
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+
+    @include small-layout {
+      white-space: nowrap;
+    }
+  }
+
+  &__video-list {
+    @include small-layout {
+      padding: 0 16px;
     }
   }
 

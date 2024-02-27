@@ -1,103 +1,109 @@
 .hero {
-  position: relative;
-  height: 887px;
+  padding-top: 33vw;
   padding-bottom: 60px;
-  overflow: hidden;
-
-  @include large-layout {
-    height: 685px;
-    padding-bottom: 50px;
-  }
-
-  @include medium-layout {
-    height: 643px;
-    padding-bottom: 40px;
-  }
-
-  @include small-layout {
-    height:429px;
-    padding-bottom: 30px;
-  }
-
-  &__picture {
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 218px;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      background: linear-gradient(90deg, rgba(0,2,1,1) 0%, rgba(0,2,1,1) 100%);
-      background: linear-gradient(transparent, 30%, #000201);
-    }
-  }
-
-  &__banner {
-    @include center-block(100vw);
-    object-fit: cover;
-    object-position: 0 0;
-  }
-
-  &__banner-text {
-    position: absolute;
-    top: 476px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    @include block-width(795px);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: linear-gradient(
+    180deg, rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.76) 65%,
+    rgba(0, 0, 0, 1) 100%
+    ),
+    image-set(
+      url('../img/hero@2x.avif') type('image/avif') 2x,
+      url('../img/hero.avif') type('image/avif'),
+      url('../img/hero@2x.webp') type('image/webp') 2x,
+      url('../img/hero.webp') type('image/webp'),
+      url('../img/hero@2x.jpg') 2x,
+      url('../img/hero.jpg')
+    );
 
     @include large-layout {
-      top: 337px;
-      @include block-width(639px);
-    }
-
-    @include small-layout {
-      top: 173px;
-      @include block-width(288px);
-    }
-  }
-
-  &__text {
-    position: absolute;
-    top: 687px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    color: $main-red;
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    @include large-layout {
-      top: 507px;
-      font-size: 32px;
-    }
-
-    @include small-layout {
-      top: 251px;
-      font-size: 20px;
-    }
-  }
-  
-
-  &__link {
-    position: absolute;
-    top: 760px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-
-    @include large-layout {
-      top: 571px;
+      padding-bottom: 50px;
     }
 
     @include medium-layout {
-      top: 567px;
+      margin-bottom: 40px;
     }
 
     @include small-layout {
-      top: 363px;
+      padding-bottom: 30px;
+      padding-top: 54vw;
+      background-image: linear-gradient(
+      180deg, rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.76) 65%,
+      rgba(0, 0, 0, 1) 100%
+      ),
+      image-set(
+        url('../img/hero-320@2x.avif') type('image/avif') 2x,
+        url('../img/hero-320.avif') type('image/avif'),
+        url('../img/hero-320@2x.webp') type('image/webp') 2x,
+        url('../img/hero-320.webp') type('image/webp'),
+        url('../img/hero-320@2x.jpg') 2x,
+        url('../img/hero-320.jpg')
+      );
     }
-  }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+    }
+
+		&__banner-text {
+      margin-bottom: 2px;
+      @include block-width(795px);
+
+      @include large-layout {
+        @include block-width(639px);
+      }
+
+      @include small-layout {
+        @include block-width(288px);
+      }
+		}
+
+		&__date {
+      padding-bottom: 16px;
+      color: $main-red;
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      @include large-layout {
+        font-size: 32px;
+      }
+
+      @include medium-layout {
+        margin-bottom: 12px;
+      }
+
+      @include small-layout {
+        font-size: 20px;
+      }
+		}
+
+    &__link {
+      display: none;
+
+      @include small-layout {
+        display: block;
+        margin-bottom: 32px;
+      }
+    }
+
+		&__arrow {
+      width: 64px;
+      height: 64px;
+
+      &:hover {
+        color: $main-red;
+      }
+
+      @include medium-layout {
+        width: 36px;
+        height: 36px;
+      }
+		}
 }

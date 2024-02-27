@@ -1,0 +1,28 @@
+.link-show-trailer {
+  padding: 14px 20px;
+  background-color: $main-red;
+  border: 1px solid transparent;
+  border-radius: 52px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $hover-red;
+  }
+
+  &:focus {
+    background-color: $hover-red;
+    border-color: $text;
+  }
+
+  @include medium-layout {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  @include small-layout {
+    padding: 10px 15px;
+  }
+}

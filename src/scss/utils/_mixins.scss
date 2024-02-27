@@ -28,19 +28,19 @@
 }
 
 @mixin large-layout {
-  @media (max-width: 1024px) {
+  @media (max-width: 1080px) {
     @content;
   }
 }
 
 @mixin medium-layout {
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     @content;
   }
 }
 
 @mixin small-layout {
-  @media (max-width: 450px) {
+  @media (max-width: 580px) {
     @content;
   }
 }

@@ -15,33 +15,29 @@
     <div class="container header__container">
       <img class="header__logo logo" src="img/logo.svg" alt="Логотип ПРО КИНО">
 
-      <a class="header__link" href="#trailers">Смотреть трейлер</a>
+      <a class="header__link link-show-trailer" href="#trailers">Смотреть трейлер</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <h1 class="visually-hidden"> Сериал от Netflix - Аватар: Легенда об Аанге - выход 22 февраля 2024 года</h1>
+      <div class="container hero__container">
+        <img class="hero__banner-text" src="img/banner-text.png" alt="Avatar the last aitbender">
 
-      <picture class="hero__picture">
-        <source  srcset="img/banner320.jpg" media="(max-width: 450px)">
-        <source  srcset="img/banner-768.jpg" media="(max-width: 768px)">
-        <source  srcset="img/banner-1024.jpg" media="(max-width: 1024px)">
-        <img class="hero__banner" src="img/banner.jpg" alt="Постер к филму Аватар: Легенда об Аанге">
-      </picture>
+        <p class="hero__date">
+          <time datetime="2024-02-22">22 Февраля</time>
+        </p>
 
-      <img class="hero__banner-text" src="img/banner-text.png" alt="Avatar the last aitbender">
-
-      <p class="hero__text">
-        <time datetime="2024-02-22">22 Февраля</time>
-      </p>
-
-      <a class="hero__link" href="#about">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="32" cy="32" r="31.5" stroke="white"/>
-          <path d="M20.1921 26.4547C20.1921 26.2532 20.2718 26.0469 20.4265 25.8922C20.7359 25.5828 21.2421 25.5828 21.5515 25.8922L32.1406 36.4813L42.575 26.0469C42.8843 25.7375 43.3906 25.7375 43.7 26.0469C44.0093 26.3563 44.0093 26.8625 43.7 27.1719L32.7031 38.1735C32.3937 38.4828 31.8875 38.4828 31.5781 38.1735L20.4265 27.0219C20.2671 26.8625 20.1921 26.661 20.1921 26.4547Z" fill="white"/>
-        </svg>
-      </a>
+        <a class="hero__link link-show-trailer" href="#trailers">Смотреть трейлер</a>
+  
+        <a class="hero__arrow" href="#about">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="31.5" stroke="currentColor"/>
+            <path d="M20.1921 26.4547C20.1921 26.2532 20.2718 26.0469 20.4265 25.8922C20.7359 25.5828 21.2421 25.5828 21.5515 25.8922L32.1406 36.4813L42.575 26.0469C42.8843 25.7375 43.3906 25.7375 43.7 26.0469C44.0093 26.3563 44.0093 26.8625 43.7 27.1719L32.7031 38.1735C32.3937 38.4828 31.8875 38.4828 31.5781 38.1735L20.4265 27.0219C20.2671 26.8625 20.1921 26.661 20.1921 26.4547Z" fill="currentColor"/>
+          </svg>
+        </a> 
+      </div>
     </section>
 
     <section class="about" id="about">
@@ -54,12 +50,14 @@
           </p>
         </div>
 
+<!--
         <picture class="about__picture">
           <source  srcset="img/about-320.jpg" media="(max-width: 450px)">
           <source  srcset="img/about-768.jpg" media="(max-width: 768px)">
           <source  srcset="img/about-1024.jpg" media="(max-width: 1024px)">
           <img class="about__img" src="img/about.jpg" alt="Аанг на Аппе">
         </picture>
+      -->
       </div>
     </section>
 
@@ -90,7 +88,7 @@
       </div>
     </section>
   </main>
-
+<!--
   <footer class="footer">
     <div class="container footer__container">
       <ul class="footer__developers">
@@ -108,5 +106,6 @@
       <img class="footer__logo logo" src="img/logo.svg" alt="Логотип ПРО КИНО">
     </div>
   </footer>
+-->
 </body>
 </html>

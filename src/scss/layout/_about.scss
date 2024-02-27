@@ -26,13 +26,98 @@
       flex-direction: column;
       row-gap: 20px;
     }
+
+    &:after {
+      content: '';
+      flex-basis: 530px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: -webkit-image-set(
+        url('../img/about@2x.avif') type('image/avif') 2x,
+        url('../img/about.avif') type('image/avif') 1x,
+        url('../img/about@2x.webp') type('image/webp') 2x,
+        url('../img/about.webp') type('image/webp') 1x,
+        url('../img/about@2x.jpg') 2x,
+        url('../img/about.jpg') 1x
+      );
+      background-image: image-set(
+        url('../img/about@2x.avif') type('image/avif') 2x,
+        url('../img/about.avif') type('image/avif') 1x,
+        url('../img/about@2x.webp') type('image/webp') 2x,
+        url('../img/about.webp') type('image/webp') 1x,
+        url('../img/about@2x.jpg') 2x,
+        url('../img/about.jpg') 1x
+    );
+
+      @include large-layout {
+        flex-basis: 50%;
+        background-image: -webkit-image-set(
+          url('../img/about-1024@2x.avif') type('image/avif') 2x,
+          url('../img/about-1024.avif') type('image/avif') 1x,
+          url('../img/about-1024@2x.webp') type('image/webp') 2x,
+          url('../img/about-1024.webp') type('image/webp') 1x,
+          url('../img/about-1024@2x.jpg') 2x,
+          url('../img/about-1024.jpg') 1x
+        );
+        background-image: image-set(
+          url('../img/about-1024@2x.avif') type('image/avif') 2x,
+          url('../img/about-1024.avif') type('image/avif') 1x,
+          url('../img/about-1024@2x.webp') type('image/webp') 2x,
+          url('../img/about-1024.webp') type('image/webp') 1x,
+          url('../img/about-1024@2x.jpg') 2x,
+          url('../img/about-1024.jpg') 1x
+        );
+      }
+
+      @include medium-layout {
+        width: 100%;
+        flex-basis: 300px;
+        background-image: -webkit-image-set(
+          url('../img/about-768@2x.avif') type('image/avif') 2x,
+          url('../img/about-768.avif') type('image/avif') 1x,
+          url('../img/about-768@2x.webp') type('image/webp') 2x,
+          url('../img/about-768.webp') type('image/webp') 1x,
+          url('../img/about-768@2x.jpg') 2x,
+          url('../img/about-768.jpg') 1x
+        );
+        background-image: image-set(
+          url('../img/about-768@2x.avif') type('image/avif') 2x,
+          url('../img/about-768.avif') type('image/avif') 1x,
+          url('../img/about-768@2x.webp') type('image/webp') 2x,
+          url('../img/about-768.webp') type('image/webp') 1x,
+          url('../img/about-768@2x.jpg') 2x,
+          url('../img/about-768.jpg') 1x
+        );
+      }
+
+      @include small-layout {
+        flex-basis: 268px;
+        background-image: -webkit-image-set(
+          url('../img/about-320@2x.avif') type('image/avif') 2x,
+          url('../img/about-320.avif') type('image/avif') 1x,
+          url('../img/about-320@2x.webp') type('image/webp') 2x,
+          url('../img/about-320.webp') type('image/webp') 1x,
+          url('../img/about-320@2x.jpg') 2x,
+          url('../img/about-320.jpg') 1x
+        );
+        background-image: image-set(
+          url('../img/about-320@2x.avif') type('image/avif') 2x,
+          url('../img/about-320.avif') type('image/avif') 1x,
+          url('../img/about-320@2x.webp') type('image/webp') 2x,
+          url('../img/about-320.webp') type('image/webp') 1x,
+          url('../img/about-320@2x.jpg') 2x,
+          url('../img/about-320.jpg') 1x
+          );
+      }
+    }
   }
 
   &__content {
     flex-basis: 750px;
 
     @include large-layout {
-      flex-basis: 436px;
+      flex-basis: 50%;
     }
 
     @include medium-layout {
@@ -66,16 +151,17 @@
       font-size: 16px;
     }
   }
-
+/*
   &__picture {
     flex-basis: 530px;
 
     @include large-layout {
       flex-basis: 436px;
     }
-
+    // todo
     @include medium-layout {
-      flex-basis: 100%;
+      
     }
   }
+  */
 }

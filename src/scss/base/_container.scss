@@ -3,17 +3,11 @@
   padding: 0 66px;
   margin: 0 auto;
 
-  @include large-layout {
-    @include block-width(1024px);
-  }
-
   @include medium-layout {
-    @include block-width(768px);
     padding: 0 44px;
   }
 
   @include small-layout {
-    @include block-width(320px);
     padding: 0 16px;
   }
 }
