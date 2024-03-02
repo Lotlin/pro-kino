@@ -557,19 +557,6 @@ iframe {
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
-  /*
-    &__picture {
-      flex-basis: 530px;
-
-      @include large-layout {
-        flex-basis: 436px;
-      }
-      // todo
-      @include medium-layout {
-
-      }
-    }
-    */
 }
 @media (max-width: 1080px) {
   .about {
