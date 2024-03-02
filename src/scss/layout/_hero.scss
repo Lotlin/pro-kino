@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: linear-gradient(
     180deg, rgba(0, 0, 0, 0) 50%,
     rgba(0, 0, 0, 0.76) 65%,
@@ -18,12 +18,16 @@
       url('../img/hero.jpg')
     );
 
+    @include large {
+      background-size: contain;
+    }
+
     @include large-layout {
       padding-bottom: 50px;
     }
 
     @include medium-layout {
-      margin-bottom: 40px;
+      padding-bottom: 40px;
     }
 
     @include small-layout {

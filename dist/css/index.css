@@ -461,8 +461,13 @@ iframe {
   padding-bottom: 60px;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.76) 65%, rgb(0, 0, 0) 100%), image-set(url("../img/hero@2x.avif") type("image/avif") 2x, url("../img/hero.avif") type("image/avif"), url("../img/hero@2x.webp") type("image/webp") 2x, url("../img/hero.webp") type("image/webp"), url("../img/hero@2x.jpg") 2x, url("../img/hero.jpg"));
+}
+@media (max-width: 1800px) {
+  .hero {
+    background-size: contain;
+  }
 }
 @media (max-width: 1080px) {
   .hero {
@@ -471,7 +476,7 @@ iframe {
 }
 @media (max-width: 900px) {
   .hero {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 580px) {

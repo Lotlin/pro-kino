@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
+
   <link rel="icon" href="img/icon.png" type="image/png">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+
   <link rel="preload" href="fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Inter-600.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="css/index.css">
+  
+  <script src="js/index.js" type="module"></script>
+
   <title>ПРО КИНО - Аватар: Легенда об Аанге</title>
 </head>
+
 <body>
   <header class="header">
     <div class="container header__container">
@@ -63,29 +70,7 @@
 
     <section class="trailers" id="trailers">
       <h2 class="visually-hidden">Трейлеры к фильму</h2>
-      <div class="container trailers__container">
-        <ul class="trailers__btn-list">
-          <li class="trailers__btn-item">
-            <button class="trailers__btn trailers__btn--active" aria-label="Первый трейлер">трейлер 1</button>
-          </li>
-          <li class="trailers__btn-item">
-            <button class="trailers__btn" aria-label="Второй трейлер">трейлер 2</button>
-          </li>
-          <li class="trailers__btn-item">
-            <button class="trailers__btn" aria-label="Третий трейлер">трейлер 3</button>
-          </li>
-        </ul>
-
-        <ul class="trailers__video-list">
-          <li class="trailers__video-item">
-            <div class="trailers__video-wrapper">
-              <iframe class="trailers__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk" 
-                title="Avatar: The Last Airbender | Official Trailer | Netflix" frameborder="0">
-              </iframe>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="container trailers__container"></div>
     </section>
   </main>
 
@@ -97,7 +82,7 @@
         </li>
 
         <li class="footer__developer">Developer:
-          <a class="footer__developer-link" href="https://t.me/lotlin22">Olesia Morozova</a>
+          <a class="footer__developer-link" href="https://t.me/Olesia_Mor">Olesia Morozova</a>
         </li>
       </ul>
 

@@ -27,6 +27,12 @@
   @include block-width($max-width);
 }
 
+@mixin large {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
 @mixin large-layout {
   @media (max-width: 1080px) {
     @content;
